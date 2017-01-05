@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--- importo CDN materializecss  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- limito el uso de zoom  -->
+    <meta name="viewport" content="width=device-width,initial-scale=10 \,user-scalable=no" />
+    <link rel="stylesheet" href="estilos/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Luizgram</title>
+  </head>
+  <body>
+    <!-- Secciones de la apagina -->
+    <section id="main-container"><!-- Section principal -->
+      <div class="container"><!-- caja primcipal divido en filas hasta 12 columnas -->
+        <div class="row"> <!-- Primer fila  alinea todo el contenido de la pantalla-->
+          <div class="col s10 push-s1"><!-- columna central -->
+            <div class="row"><!-- Segunda Fila que contiene pantalla LogIn  dividida en dos partes imagen y formulario-->
+              <div class="col m5 hide-on-small-only"><!-- columna para imagen solo visible de tablet and Up-->
+                <img  class="iphone" src="imagenes/camara.jpg" alt="logo" />
+              </div><!--fin imagen -->
+              <!-- en esta fila uso 5 columnas para la imagen y 7 para el formulario -->
+              <div class="col s12 m7"><!-- columna para el formulario -->
+                <div class="row"><!--fila para signUP-->
+                  <div class="signup-box"><!-- caja SignUp -->
+                    <h1 class="luizGram">LuizGram</h1> <!--titulo para formulario -->
+                    <form class="signup-form"><!-- Formulario -->
+                      <h2>Comparte fotos con tus amigos online</h2>
+                      <div class="section"><!--caja para botones del formulario -->
+                        <a class="btn btn-fb hide-on-small-only">Iniciar sesion con Facebook</a><!-- boton dispositivos tablet and up-->
+                        <a class="btn btn-fb hide-on-med-and-up">Iniciar sesion</a><!-- boton dispositivos moviles -->
+                      </div><!-- fin caja botones formulario-->
+                      <div class="divider"></div><!--caja division -->
+                      <div class="section"><!-- caja datos formulario -->
+                        <input type="email" name="email" placeholder="Correo electronico"></input>
+                        <input type="text" name="name" placeholder="Nombre Completo"></input>
+                        <input type="text" name="username" placeholder="Nombre de Usuario"></input>
+                        <input type="password" name="password" placeholder="Contraseña"></input>
+                        <button class="btn waves-effect waves-light"type="submit">Registrate</button>
+                      </div><!-- fin caja datos formulario -->
+                    </form><!--fin Formulario -->
+                  </div><!-- caja SignUp -->
+                </div><!-- Fin fila para signUP-->
+                <div class="row"><!-- fila signIn -->
+                  <div class="login-box"><!-- Caja Login  -->
+                    Ya tienes Cuenta? <a href="/signin">Entrar</a>
+                  </div><!-- fin Caja Login -->
+                </div><!--Fin sigIn -->
+              </div><!-- fin columna para el formulario -->
+            </div><!-- fin segunda fila -->
+          </div><!-- fin columna central -->
+        </div><!-- fin primer fila -->
+      </div><!-- fin caja primcipal -->
+    </section><!-- fin Section principal -->
+    <footer class="site-footer">
+      <div class="container"><!-- Alinear elementos footer -->
+        <div class="row"><!-- fila contenido footer -->
+          <!-- Divido el footer en dos columnas para elegir idioma y registro -->
+          <div class="col s12 l3 center-align"><!-- columna  idiomas screen movil-full Desktop-1/3  -->
+            <!--lsita para idiomas de la pagina  -->
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Idioma</a>
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'><!-- Menu Idiomas -->
+              <li><a href="#!">Español</a></li>
+              <li><a href="#!">English</a></li>
+            </ul><!--fin menu idiomas  -->
+          </div><!-- fin columna idiomas -->
+          <div class="col s12 l3 push-l6 center-align">
+            © 2017 Luizgram
+          </div>
+        </div><!-- fin fila contenido footer -->
+      </div><!-- Fin alinear Elementos Footer -->
+    </footer>
+    <!-- importo CDN jquery para el funcionamiento de materializecss -->
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <!-- importo  CDN materializecss-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  </body>
+</html>
